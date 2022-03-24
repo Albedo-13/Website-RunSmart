@@ -1,4 +1,14 @@
-h2 {
-  color: blue;
+* {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+.a {
+  color: #c70101;
+  font-weight: 500;
+}
+
+.b {
+  font-family: 'Museo Sans Cyrl';
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */

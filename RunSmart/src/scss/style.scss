@@ -1,3 +1,15 @@
-h2 {
-    color: blue;
+@import 'base/_variables';
+
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+.a {
+    color: $main-color;
+    font-weight: 500;
+}
+
+.b {
+    font-family: 'Museo Sans Cyrl';
+    font-weight: 700;
 }
