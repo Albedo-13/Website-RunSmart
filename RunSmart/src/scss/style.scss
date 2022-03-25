@@ -4,12 +4,11 @@
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
 
-.a {
-    color: $main-color;
-    font-weight: 500;
+.container {
+    max-width: 950px;
+    margin: 0 auto;
 }
 
-.b {
-    font-family: 'Museo Sans Cyrl';
-    font-weight: 700;
-}
+@import 'blocks/_promo';
+@import 'blocks/_header';
+@import 'blocks/_buttons';
