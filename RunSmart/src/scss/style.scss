@@ -9,15 +9,6 @@
     margin: 0 auto;
 }
 
-.title {
-    font-size: 30px;
-    line-height: 30px;
-    font-weight: 700;
-    text-align: center;
-    color: #0d0d0d;
-    text-transform: uppercase;
-}
-
 .test {
     min-height: 250px;
     background-color: antiquewhite;
@@ -27,3 +18,7 @@
 @import 'blocks/_header';
 @import 'blocks/_buttons';
 @import 'blocks/_advances';
+@import 'blocks/_titles';
+
+
+@import '_media';

@@ -7,15 +7,6 @@
   margin: 0 auto;
 }
 
-.title {
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 700;
-  text-align: center;
-  color: #0d0d0d;
-  text-transform: uppercase;
-}
-
 .test {
   min-height: 250px;
   background-color: antiquewhite;
@@ -224,5 +215,106 @@
 
 .advances__descr a {
   color: red;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #0d0d0d;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  .header {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .header__official {
+    margin-right: 0;
+  }
+  .promo__wrapper {
+    margin-right: 50px;
+  }
+  .advances__wrapper {
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .advances__block {
+    width: 55%;
+    margin: 0 auto;
+  }
+  .advances__icon {
+    margin-top: 25px;
+  }
+  .advances__label {
+    margin-top: 15px;
+  }
+  .advances__descr {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__official {
+    display: none;
+  }
+  .button {
+    width: 150px;
+  }
+  .button_main {
+    width: 250px;
+  }
+  .promo {
+    padding: 10px 0 50px 0;
+  }
+  .advances {
+    padding: 33px 0 40px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__contacts {
+    margin-top: 10px;
+  }
+  .promo__wrapper {
+    margin: 80px 15px 0 15px;
+    margin-top: 80px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .promo__header {
+    font-size: 33px;
+    text-align: center;
+  }
+  .promo__subheader {
+    font-size: 20px;
+    text-align: center;
+  }
+  .promo__icons {
+    width: 50%;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .promo__icon {
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
