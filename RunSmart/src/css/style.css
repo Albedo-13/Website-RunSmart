@@ -7,6 +7,20 @@
   margin: 0 auto;
 }
 
+.title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #0d0d0d;
+  text-transform: uppercase;
+}
+
+.test {
+  min-height: 250px;
+  background-color: antiquewhite;
+}
+
 .promo {
   min-height: 536px;
   padding: 21px 0 93px 0;
@@ -30,7 +44,7 @@
 .promo__header {
   font-size: 42px;
   line-height: 42px;
-  font-weight: bold;
+  font-weight: 700;
   color: #fff;
   text-transform: uppercase;
   margin: 0;
@@ -164,5 +178,51 @@
   height: 50px;
   font-size: 16px;
   margin-top: 67px;
+}
+
+.advances {
+  min-height: 305px;
+  background-color: #f6f6f6;
+  padding: 66px 0 82px 0;
+}
+
+.advances__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 65px;
+  margin-left: 29px;
+  margin-right: 13px;
+}
+
+.advances__block {
+  width: 230px;
+}
+
+.advances__icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.advances__label {
+  margin-top: 34px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: #0d0d0d;
+}
+
+.advances__descr {
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.advances__descr a {
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */
