@@ -42,7 +42,6 @@
     }
 
     .button {
-        width: 150px;
         &_main {
             width: 250px;
         }
@@ -88,6 +87,37 @@
         }
         &__icon {
             margin-top: 20px;
+        }
+    }
+
+    .consultation {
+        padding: 48px 5px 46px 10px;
+        &__descr {
+            font-size: 18px;
+            margin-top: 35px;
+            text-align: center;
+        }
+    }
+
+    .title {
+        &_left {
+            font-size: 21px;
+            text-align: center;
+        }
+    }
+
+    .feed-form {
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 25px;
+        input {
+            width: 210px;
+        }
+    }
+
+    .button {
+        &_submit {
+            width: 250px;
         }
     }
 }
