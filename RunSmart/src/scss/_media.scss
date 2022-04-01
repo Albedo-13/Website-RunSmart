@@ -32,6 +32,12 @@
             margin: 10px;
         }
     }
+
+    .catalog {
+        &__content {
+            justify-content: space-around;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -53,6 +59,23 @@
 
     .advances {
         padding: 33px 0 40px 0;
+    }
+    
+    .carousel {
+        display: none;
+    }
+
+    .catalog {
+        padding-top: 70px;
+
+        &__tabs {
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        &__tab {
+            width: calc(220px + 10%);
+            margin: 5px auto;
+        }
     }
 }
 
@@ -118,6 +141,26 @@
     .button {
         &_submit {
             width: 250px;
+        }
+    }
+
+    .feedback {
+        padding-right: 18px;
+    }
+
+    .feedback-person {
+        flex-direction: column;
+        margin: 0 auto;
+        &__img {
+            display: block;
+            padding: 0;
+            margin: 0 auto 20px auto;
+        }
+        &__name {
+            text-align: center;
+        }
+        &__record {
+            text-align: center;
         }
     }
 }

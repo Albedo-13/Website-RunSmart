@@ -321,7 +321,7 @@
 }
 
 .catalog {
-  padding-bottom: 100px;
+  padding-bottom: 76px;
 }
 
 .catalog__tabs {
@@ -395,7 +395,7 @@
   width: 260px;
   min-height: 394px;
   border: solid 2px #e8e8e8;
-  padding: 20px 20px 26px 20px;
+  padding: 20px 20px 15px 20px;
   overflow: hidden;
   margin-bottom: 20px;
 }
@@ -441,7 +441,8 @@
 .catalog-item hr {
   background-color: #e8e8e8;
   margin: 20px 0;
-  border-bottom: none;
+  height: 1px;
+  border: none;
 }
 
 .catalog-item__footer {
@@ -548,6 +549,63 @@
   color: #c70101;
 }
 
+.feedback {
+  padding-bottom: 69px;
+  padding-left: 18px;
+}
+
+.feedback__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 63px;
+}
+
+.feedback__separator {
+  height: 1px;
+  width: 100%;
+  margin: 50px auto 42px auto;
+  background-color: #f6f6f6;
+  border: none;
+}
+
+.feedback-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(90% + 40px);
+}
+
+.feedback-person__img {
+  padding-right: 60px;
+  width: 169px;
+  height: 169px;
+}
+
+.feedback-person__name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0d0d0d;
+}
+
+.feedback-person__record {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #646464;
+}
+
+.feedback-person__comment {
+  margin-top: 19px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #0d0d0d;
+}
+
 @media (max-width: 991px) {
   .header {
     margin-left: 50px;
@@ -579,6 +637,10 @@
   .advances__descr {
     margin: 10px;
   }
+  .catalog__content {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 @media (max-width: 767px) {
@@ -593,6 +655,23 @@
   }
   .advances {
     padding: 33px 0 40px 0;
+  }
+  .carousel {
+    display: none;
+  }
+  .catalog {
+    padding-top: 70px;
+  }
+  .catalog__tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px;
+  }
+  .catalog__tab {
+    width: calc(220px + 10%);
+    margin: 5px auto;
   }
 }
 
@@ -659,6 +738,27 @@
   }
   .button_submit {
     width: 250px;
+  }
+  .feedback {
+    padding-right: 18px;
+  }
+  .feedback-person {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .feedback-person__img {
+    display: block;
+    padding: 0;
+    margin: 0 auto 20px auto;
+  }
+  .feedback-person__name {
+    text-align: center;
+  }
+  .feedback-person__record {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

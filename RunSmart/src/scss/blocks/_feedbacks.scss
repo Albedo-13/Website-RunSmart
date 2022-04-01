@@ -1,0 +1,46 @@
+.feedback {
+    padding-bottom: 69px;
+    padding-left: 18px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 63px;
+    }
+    &__separator {
+        height: 1px;
+        width: 100%;
+        margin: 50px auto 42px auto;
+        background-color: #f6f6f6;
+        border: none;
+    }
+}
+
+.feedback-person {
+    display: flex;
+    width: calc(90% + 40px);
+    &__img {
+        padding-right: 60px;
+        width: 169px;
+        height: 169px;
+    }
+    &__about {
+
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 700;
+        color: #0d0d0d;
+    }
+    &__record {
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 300;
+        color: #646464;
+    }
+    &__comment {
+        margin-top: 19px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #0d0d0d;
+    }
+}
