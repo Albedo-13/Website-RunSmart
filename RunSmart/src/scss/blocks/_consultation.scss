@@ -9,4 +9,14 @@
         color: #fff;
         margin-top: 75px;
     }
+    .error {
+        border: 2px solid $main-color;
+        border-color: $main-color;
+    }
+    label.error {
+        color: #fff;
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
 }
