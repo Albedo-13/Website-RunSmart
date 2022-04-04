@@ -79,4 +79,28 @@ $(document).ready(function () {
 	validateForms('#consultation-form');
 	validateForms('#consultation form');
 	validateForms('#order form');
+
+	// var cleave = new Cleave('#consultation-form [name=phone]', {
+	// 	phone: true,
+	// 	phoneRegionCode: 'RU'
+	// });
+	// var cleave = new Cleave('#consultation .feed-form [name=phone]', {
+	// 	phone: true,
+	// 	phoneRegionCode: 'RU'
+	// });
+	// var cleave = new Cleave('#order .feed-form [name=phone]', {
+	// 	phone: true,
+	// 	phoneRegionCode: 'RU'
+	// });
+
+	function validatePhone(value, item) {
+		return value = new Cleave(item, {
+			phone: true,
+			phoneRegionCode: 'RU'
+		});
+	};
+	var cleave;
+	validatePhone(cleave, '#consultation-form [name=phone]');
+	validatePhone(cleave, '#consultation [name=phone]');
+	validatePhone(cleave, '#order [name=phone]');
 });

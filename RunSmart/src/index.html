@@ -90,7 +90,7 @@
             </div>
             <form id="consultation-form" class="feed-form" action="#">
                 <input name="name" type="text" placeholder="Ваше имя">
-                <input name="phone" type="number" placeholder="Ваш телефон">
+                <input name="phone" maxlength="20" type="text" placeholder="Ваш телефон">
                 <input name="email" type="email" placeholder="Ваш E-mail">
 
                 <button class="button button_submit">заказать консультацию</button>
@@ -422,9 +422,9 @@
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form feed-form_mt25" action="#">
-                <input required name="name" type="text" placeholder="Ваше имя">
-                <input required name="phone" type="number" placeholder="Ваш телефон">
-                <input required name="email" type="email" placeholder="Ваш E-mail">
+                <input name="name" type="text" placeholder="Ваше имя">
+                <input name="phone" maxlength="20" placeholder="Ваш телефон">
+                <input name="email" type="email" placeholder="Ваш E-mail">
 
                 <button class="button button_submit">заказать консультацию</button>
             </form>
@@ -435,9 +435,9 @@
             <div class="modal__subtitle">Ваш заказ:</div>
             <div class="modal__descr">???</div>
             <form class="feed-form feed-form_mt25" action="#">
-                <input required name="name" type="text" placeholder="Ваше имя">
-                <input required name="phone" type="number" placeholder="Ваш телефон">
-                <input required name="email" type="email" placeholder="Ваш E-mail">
+                <input name="name" type="text" placeholder="Ваше имя">
+                <input name="phone" maxlength="20" placeholder="Ваш телефон">
+                <input name="email" type="email" placeholder="Ваш E-mail">
 
                 <button class="button button_submit">купить</button>
             </form>
@@ -454,6 +454,8 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/cleave.min.js"></script>
+    <script src="js/cleave-phone.ru.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
