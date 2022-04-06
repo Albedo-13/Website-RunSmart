@@ -80,27 +80,32 @@ $(document).ready(function () {
 	validateForms('#consultation form');
 	validateForms('#order form');
 
-	// var cleave = new Cleave('#consultation-form [name=phone]', {
-	// 	phone: true,
-	// 	phoneRegionCode: 'RU'
-	// });
-	// var cleave = new Cleave('#consultation .feed-form [name=phone]', {
-	// 	phone: true,
-	// 	phoneRegionCode: 'RU'
-	// });
-	// var cleave = new Cleave('#order .feed-form [name=phone]', {
-	// 	phone: true,
-	// 	phoneRegionCode: 'RU'
-	// });
-
 	function validatePhone(value, item) {
 		return value = new Cleave(item, {
 			phone: true,
 			phoneRegionCode: 'RU'
 		});
 	};
+
 	var cleave;
 	validatePhone(cleave, '#consultation-form [name=phone]');
 	validatePhone(cleave, '#consultation [name=phone]');
 	validatePhone(cleave, '#order [name=phone]');
+
+	// PHP Mailer
+
+	$('form').submit(function(e) {
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "mailer/smart.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			$('#consultation, #order').fadeOut();
+			$('.overlay, #thanks').fadeIn('slow');
+			$('form').trigger('reset');
+		});
+		return false;
+	});
 });
