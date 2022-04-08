@@ -944,6 +944,9 @@
     right: 10px;
     top: 10px;
   }
+  .modal_mini {
+    min-height: 60px;
+  }
   .modal .feed-form {
     width: 100%;
   }

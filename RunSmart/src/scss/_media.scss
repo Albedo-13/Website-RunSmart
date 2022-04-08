@@ -180,6 +180,9 @@
             right: 10px;
             top: 10px;
         }
+        &_mini {
+            min-height: 60px;
+        }
         .feed-form {
             width: 100%;
             input {
