@@ -108,4 +108,24 @@ $(document).ready(function () {
 		});
 		return false;
 	});
+
+	// Smooth scroll and pageup
+
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 1200 && window.screen.width >= 768) {
+			$('.pageup').fadeIn();
+		} else {
+			$('.pageup').fadeOut();
+		}
+	});
+
+	$("a[href^='#']").on('click', function() {
+		const elementClick = $(this).attr("href")
+		const destination = $(elementClick).offset().top;
+		jQuery("html:not(:animated),body:not(:animated)").animate({
+		  scrollTop: destination
+		}, 800);
+		return false;
+	});
+
 });

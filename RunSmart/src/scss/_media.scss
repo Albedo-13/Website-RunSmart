@@ -38,6 +38,14 @@
             justify-content: space-around;
         }
     }
+
+    .footer {
+        &__info {
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -163,4 +171,23 @@
             text-align: center;
         }
     }
+
+    .modal {
+        width: 250px;
+        min-height: 320px;
+        padding: 35px 30px 20px 30px;
+        &__close {
+            right: 10px;
+            top: 10px;
+        }
+        .feed-form {
+            width: 100%;
+            input {
+                padding: 0;
+                padding-left: 25px;
+                width: 90%;
+            }
+        }
+    }
+    
 }
