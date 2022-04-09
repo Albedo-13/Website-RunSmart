@@ -1,5 +1,5 @@
 .catalog {
-    padding-bottom: 76px;
+    padding-bottom: 89px;
     &__tabs {
         margin-top: 63px;
         list-style-type: none;
@@ -60,14 +60,14 @@
             margin: 0 auto;
         }
         &__subtitle {
-            margin-top: 20px;
+            margin-top: 12px;
             font-size: 16px;
             font-weight: 700;
             text-align: center;
             color: #0d0d0d;
         }
         &__descr {
-            margin-top: 16px;
+            margin-top: 12px;
             font-size: 14px;
             font-weight: 300;
             text-align: center;
@@ -123,7 +123,7 @@
                 margin-left: 15px;
             }
         }
-        &__list {
+        &__about {
             position: relative;
             width: 50%;
             margin-left: 0px;
@@ -132,17 +132,21 @@
             transition: 0.5s all;
             padding-left: 19px;
             margin-bottom: 0px;
-            list-style-type: none;
             &_active {
                 transform: translateX(-100%);
-                margin-left: 39px;
+                margin-left: 10px;
             }
+        }
+        &__list {
+            margin-top: 0;
+            padding-left: 35px;
+            list-style-type: none;
             li {
                 position: relative;
                 font-size: 14px;
                 font-weight: 300;
                 color: #555;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
                 &::before {
                     content: '';
                     position: absolute;
@@ -158,7 +162,7 @@
             position: absolute;
             bottom: 0;
             left: 50%;
-            transform: translateX(calc(-50% - 19px));
+            transform: translateX(-50%);
             display: block;
             color: $main-color;
             font-size: 14px;
