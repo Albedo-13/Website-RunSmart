@@ -2,7 +2,7 @@ $(document).ready(function () {
 	// Carousel
 
 	$('.carousel__inner').slick({
-		speed: 800,
+		speed: 500,
 		prevArrow: '<button type="button" class="slick-prev"><img src="icons/carousel_arrow_left.png"></button>',
 		nextArrow: '<button type="button" class="slick-next"><img src="icons/carousel_arrow_right.png"></button>',
 		responsive: [
@@ -20,7 +20,9 @@ $(document).ready(function () {
 	$('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
 		$(this)
 			.addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
-			.closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
+			.closest('div.container').find('div.catalog__content')
+			.removeClass('catalog__content_active').eq($(this).index())
+			.addClass('catalog__content_active');
 	});
 
 	function toggleSlide(item) {
@@ -29,7 +31,7 @@ $(document).ready(function () {
 				e.preventDefault();
 				$('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
 				$('.catalog-item__about').eq(i).toggleClass('catalog-item__about_active');
-			})
+			});
 		});
 	}
 
@@ -50,8 +52,8 @@ $(document).ready(function () {
 			$('#order .modal__descr').text(
 				$('.catalog-item__subtitle').eq(i).text());
 			$('.overlay, #order').fadeIn('fast');
-		})
-	})
+		});
+	});
 
 	// Validation
 
@@ -74,8 +76,8 @@ $(document).ready(function () {
 				}
 			}
 		});
-	};
-
+	}
+	
 	validateForms('#consultation-form');
 	validateForms('#consultation form');
 	validateForms('#order form');
@@ -85,7 +87,7 @@ $(document).ready(function () {
 			phone: true,
 			phoneRegionCode: 'RU'
 		});
-	};
+	}
 
 	var cleave;
 	validatePhone(cleave, '#consultation-form [name=phone]');
@@ -120,7 +122,7 @@ $(document).ready(function () {
 	});
 
 	$("a[href=#up],[href=#catalog]").on('click', function() {
-		const elementClick = $(this).attr("href")
+		const elementClick = $(this).attr("href");
 		const destination = $(elementClick).offset().top;
 		jQuery("html:not(:animated),body:not(:animated)").animate({
 		  scrollTop: destination
